@@ -1,19 +1,37 @@
-name: Custom Spell Check
+name: Spell Check Workflow
 
-on: [push, pull_request]
+on: push
 
 jobs:
-  custom-spellcheck:
+  spellcheck:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install pyspellchecker
-    - name: Check spelling
-      run: python spell_check.py
+
+    - name: Run spell check
+      id: spellcheck
+      run: |
+        python spell_check.py || echo 'spelling_failed=yes' >> $GITHUB_ENV
+
+    - name: Comment commit on spell check failure
+      if: env.spelling_failed == 'yes'
+      uses: peter-evans/commit-comment@v1
+      with:
+        body: |
+          ## :red_circle: Spell Check Failed
+          
+          Some misspellings were detected. Please review the misspelled words as noted in the action log.
+        token: ${{ secrets.GITHUB_TOKEN }}
+

@@ -4,28 +4,34 @@ import re
 
 spell = SpellChecker()
 
+# Define a function to clean words by removing punctuation
 def clean_word(word):
     return re.sub(r'[^\w\s]', '', word)
 
+# Find all markdown files
+files = glob.glob('**/*.md', recursive=True)
+
+# Initialize a flag to indicate if misspelled words were found
 misspelled_words_found = False
-results_path = "spell_check_results.txt"
 
-with open(results_path, "w") as results_file:
-    for file_path in glob.glob('**/*.md', recursive=True):
-        with open(file_path, 'r') as file:
-            text = file.read()
-            words = [clean_word(word) for word in text.split()]
-            misspelled = spell.unknown(words)
-            if misspelled:
-                misspelled_words_found = True
-                results_file.write(f"Misspelled words in {file_path}:\n")
-                print(f"::error file={file_path}::Found misspelled words.")
-                for word in misspelled:
-                    results_file.write(f"- {word}\n")
+# Loop through each file
+for file_path in files:
+    with open(file_path, 'r') as file:
+        text = file.read()
+        words = [clean_word(word) for word in text.split()]
+        # Find misspelled words
+        misspelled = spell.unknown(words)
+        if misspelled:
+            misspelled_words_found = True
+            print(f"Misspelled words in {file_path}:")
+            for word in misspelled:
+                print(f"- {word}")
+            print("\n")
 
+# Exit with a non-zero status code if misspellings were found
 if misspelled_words_found:
-    print("::error ::Spelling check failed. Please review the misspelled words listed in the results file.")
     exit(1)
+
 
 
 

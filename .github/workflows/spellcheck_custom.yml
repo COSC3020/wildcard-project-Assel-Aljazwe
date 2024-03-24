@@ -1,6 +1,6 @@
 name: Spell Check Workflow
 
-on: push
+on: [push, pull_request]
 
 jobs:
   spellcheck:
@@ -20,18 +20,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install pyspellchecker
 
-    - name: Run spell check
-      id: spellcheck
-      run: |
-        python spell_check.py || echo 'spelling_failed=yes' >> $GITHUB_ENV
-
-    - name: Comment commit on spell check failure
-      if: env.spelling_failed == 'yes'
-      uses: peter-evans/commit-comment@v1
-      with:
-        body: |
-          ## :red_circle: Spell Check Failed
-          
-          Some misspellings were detected. Please review the misspelled words as noted in the action log.
-        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Spell check
+      run: python spell_check.py
 

@@ -4,22 +4,21 @@ import re
 
 spell = SpellChecker()
 
-# Define a function to clean words by removing punctuation
 def clean_word(word):
-    return re.sub(r'[^\w\s]', '', word)
+    # Remove punctuation at the beginning and end of the word, retain apostrophes and hyphens within words
+    return re.sub(r"(^\W+|\W+$)", "", word)
 
 # Find all markdown files
-files = glob.glob('**/*.md', recursive=True)
+files = glob.glob("**/*.md", recursive=True)
 
 # Initialize a flag to indicate if misspelled words were found
 misspelled_words_found = False
 
 # Loop through each file
 for file_path in files:
-    with open(file_path, 'r') as file:
+    with open(file_path, "r") as file:
         text = file.read()
-        words = [clean_word(word) for word in text.split()]
-        # Find misspelled words
+        words = re.findall(r"\b[\w'-]+\b", text)
         misspelled = spell.unknown(words)
         if misspelled:
             misspelled_words_found = True
@@ -31,6 +30,7 @@ for file_path in files:
 # Exit with a non-zero status code if misspellings were found
 if misspelled_words_found:
     exit(1)
+
 
 
 

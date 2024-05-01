@@ -6,10 +6,10 @@ to explain what problem you're solving, how you're doing it, and that you test
 your code.
 
 # Task:
-
+Applying algorithms to improve my previous Discrete Math project which was originally centered around Passes and Interceptions to help tell the story of a soccer/football match.
 
 # Instructions to Run Code (Dependencies)
-
+I used Python because it has built in libraries with some algorithms already available. Moreover, graphing is much easier in Python.
 
 
 # Output
@@ -17,3 +17,21 @@ your code.
 
 
 # Analysis/Reasoning
+
+
+# References:
+### Algorithms taken from:
+
+https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/
+
+https://www.geeksforgeeks.org/eigenvector-centrality-centrality-measure/
+
+https://www.geeksforgeeks.org/community-detection-in-social-networks-using-brute-force-method/
+
+https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/
+
+https://www.geeksforgeeks.org/page-rank-algorithm-implementation/
+
+### Debugging Assistance:
+
+https://chat.openai.com/

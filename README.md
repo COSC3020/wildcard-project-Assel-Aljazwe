@@ -8,7 +8,18 @@ your code.
 # Task:
 Applying algorithms to improve my previous Discrete Math project which was originally centered around Passes and Interceptions to help tell the story of a soccer/football match.
 
-# Instructions to Run Code (Dependencies)
+# Instructions to Directly Run Code (Dependencies)
+### **Dependencies** - Anaconda Navigator: https://www.anaconda.com/download
+In Anaconda Navigator, run Jupyter Notebook 6.5.4
+In Jupyter Notebook, click the 'Upload' button at the top right and upload the following files found in this GitHub repository:
+- CHELSEA.png
+- LUTON.png
+- Soccer Pitch.png
+- Chelsea vs Luton Town Gathered Data.xlsx
+- Chelsea vs Luton Town Wildcard Project Code - Algorithms.ipynb
+
+Once uploaded, click on the "Chelsea vs Luton Town Wildcard Project Code - Algorithms.ipynb" file which should appear with a book icon now, then click run on each individual cell or click the 'Cell' tab and click on the 'Run All' option.
+
 I used Python because it has built in libraries with some algorithms already available. Moreover, graphing is much easier in Python.
 
 

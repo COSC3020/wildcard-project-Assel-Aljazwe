@@ -6,7 +6,7 @@ to explain what problem you're solving, how you're doing it, and that you test
 your code.
 
 # Task:
-Applying algorithms to improve a project of mine which was originally centered around Passes and Interceptions to help tell the story of a soccer/football match. The primary motive for this project was to provide more insights and tactical analysis for match data by visually applying some of the algorithms we learned in class. Using Python's built in graphing and algorithm libraries, I hoped to visually demonstrate the purpose of some of these algorithms with vertices (which were players) and edges (which were passes).
+Applying algorithms to improve a project of mine (originally centered around Passes and Interceptions) to help better tell the story of a soccer/football match. The primary motive for this project was to provide more insights and tactical analysis for match data by visually applying some of the algorithms we learned in class. Using Python's built in graphing and algorithm libraries, I hoped to visually demonstrate the purpose of some of these algorithms with vertices (which were players) and edges (which were passes).
 
 # Instructions to Directly Run Code (Dependencies)
 ### **Dependencies** - Anaconda Navigator: https://www.anaconda.com/download

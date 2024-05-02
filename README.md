@@ -91,6 +91,13 @@ But just how important was Thiago Silva and his defensive partners in the interv
 
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/368333a3-f2ae-4282-a8e1-887a0e057338)
 
+Comparing Chelsea's and Luton's Strongly Connected Components:
+
+
+
+![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/20feb696-95bd-4806-8bab-b30816f9455f)
+
+
 
 
 # References:

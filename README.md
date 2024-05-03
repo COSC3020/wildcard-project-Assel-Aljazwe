@@ -6,7 +6,14 @@ to explain what problem you're solving, how you're doing it, and that you test
 your code.
 
 # Task:
-Applying algorithms to improve a project of mine (originally centered around Passes and Interceptions) to help better tell the story of a soccer/football match. The primary motive for this project was to provide more insights and tactical analysis for match data by visually applying some of the algorithms we learned in class. Using Python's built in graphing and algorithm libraries, I hoped to visually demonstrate the purpose of some of these algorithms with vertices (which were players) and edges (which were passes).
+- ### **Objective**: 
+  - Improve a project focused on analyzing soccer passes and interceptions by using algorithms to better understand the game's flow and tactics.
+
+- ### **Approach**: 
+  - Use Python’s graphing and algorithm libraries to create visual representations. Players are treated as points (vertices), and their passes to each other as lines (edges), to map out interactions and strategies during a match.
+
+- ### **Purpose**: 
+  - The goal is to apply these algorithms to show more detailed insights into team strategies and player roles, enhancing the overall understanding of soccer matches through visual and algorithmic analysis.
 
 # Instructions to Directly Run Code (Dependencies)
 ### **Dependencies** - Anaconda Navigator: https://www.anaconda.com/download
@@ -90,6 +97,8 @@ Our eigenvector centrality and community modularity graphs paint a simple image 
 But just how important was Thiago Silva and his defensive partners in the interval? We can further verify by specifically taking a look at Chelsea's Minimum Spanning Tree and Influence Graphs:
 
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/368333a3-f2ae-4282-a8e1-887a0e057338)
+
+Player Centralities: Both graphs show Gallagher and Silva as central figures, which means they likely had significant roles in Chelsea's gameplay during this interval.
 
 Based on the Influence Graph, we can see how vital the central defenders were for Chelsea in this interval. From the Gathered Match Data, we know Thiago Silva was the player with the most passes in the interval and that is effectively represented in the Influence Graph. Moreover, three Minimum Spanning Tree paths begin with central defenders, further emphasizing how important they were.
 

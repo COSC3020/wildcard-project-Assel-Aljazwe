@@ -91,11 +91,27 @@ But just how important was Thiago Silva and his defensive partners in the interv
 
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/368333a3-f2ae-4282-a8e1-887a0e057338)
 
+Based on the Influence Graph, we can see how vital the central defenders were for Chelsea in this interval. From the Gathered Match Data, we know Thiago Silva was the player with the most passes in the interval and that is effectively represented in the Influence Graph. Moreover, three Minimum Spanning Tree paths begin with central defenders, further emphasizing how important they were.
+
 Comparing Chelsea's and Luton's Strongly Connected Components:
 
 
 
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/20feb696-95bd-4806-8bab-b30816f9455f)
+
+Through these graphs, we can instantly tell which team was more dominant. It becomes apparent that Chelsea were the team with more possession of the ball and with better ball movement, with every player on the team being involved.
+
+Luton’s largest strongly connected component (SCC) graph consisted of only 4 players out of 11, at great distance from one another.
+When an SCC graph display few components at significant distances it reveals a lot:
+
+•	**Isolated Play and Lack of Cohesion**: Inefficient player link-up
+
+•	**Reliance on Individual Efforts**: Great distance between players suggests individual effort & skill is relied upon more frequently.
+
+•	**Challenges in Building Attacks**: Difficult to collaborate. 
+
+•	**Weakness in Maintaining Possession**
+
 
 
 

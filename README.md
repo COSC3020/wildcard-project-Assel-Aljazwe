@@ -30,9 +30,12 @@ Once uploaded, click on the "Chelsea vs Luton Town Wildcard Project Code - Algor
 
 I used Python because it has built in libraries with some algorithms already available. Moreover, graphing is much easier in Python.
 
+# Match Reference:
+![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/f538df15-6aa3-45f0-9727-032ddf57a4d2)
+
 
 # Output
-![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/f538df15-6aa3-45f0-9727-032ddf57a4d2)
+
 
 ## Randomly Chosen Graphs from Time Interval 10-20:
 
@@ -92,34 +95,57 @@ I used Python because it has built in libraries with some algorithms already ava
 ## Using the Graphs to Tell a Story:
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/003fd004-23a8-4104-b318-3f6ce1850e99)
 
-Our eigenvector centrality and community modularity graphs paint a simple image of what exactly Chelsea utilized to build-up play and generate attacks. The community modularity graph suggests that players on the right hand side of Chelsea’s formation interacted with each other far more often than the player’s on the left hand side. This shows that Chelsea were consistently attempting to attack Luton’s left side. Moreover, through the Eigenvector centraility graph, we observe how vital the Central Defender Thiago Silva was for Chelsea's distribution of the ball and in maintaining possession. The Eigenvector graph emphasizes how important the Chelsea defenders were in transitioning the ball from defense to attack and how well they helped the team hold the ball.
+**Eigenvector Centrality Graph**:
 
-But just how important was Thiago Silva and his defensive partners in the interval? We can further verify by specifically taking a look at Chelsea's Minimum Spanning Tree and Influence Graphs:
+This graph highlights the key role of central defender Thiago Silva in Chelsea's ball distribution and possession maintenance. Moreover, it shows that Chelsea's defenders were crucial in transitioning the ball from defense to attack and in retaining possession, with Silva playing a pivotal role (highest eigenvector centrality in the time interval). The three highest eigenvector centralities were achieved by the central defenders.
+
+**Community Modularity Graph**:
+
+This graph shows that Chelsea's right-hand side players interacted much more frequently than those on the left. Thus suggesting a tactical emphasis on attacking through the right side, likely targeting vulnerabilities in Luton's left-side defense.
+
+To better understand the specific contributions of Thiago Silva and his defensive colleagues during the time frame, we can examine Chelsea's Minimum Spanning Tree and Influence Graphs for more tactical insights.
 
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/368333a3-f2ae-4282-a8e1-887a0e057338)
 
-Player Centralities: Both graphs show Gallagher and Silva as central figures, which means they likely had significant roles in Chelsea's gameplay during this interval.
+**Prominent Roles of Gallagher and Silva**:
 
-Based on the Influence Graph, we can see how vital the central defenders were for Chelsea in this interval. From the Gathered Match Data, we know Thiago Silva was the player with the most passes in the interval and that is effectively represented in the Influence Graph. Moreover, three Minimum Spanning Tree paths begin with central defenders, further emphasizing how important they were.
+Gallagher and Silva are consistently central in both the Minimum Spanning Tree and Player Influence Graph, indicating their crucial roles in Chelsea's game strategy.
 
-Comparing Chelsea's and Luton's Strongly Connected Components:
+**Thiago Silva's Influence**:
+
+The Influence Graph highlights Thiago Silva due to his high number of passes, backed up by match data that notes him as a key distributor of the ball (highest number of passes in the interval).
+
+**Defense as a Starting Point**:
+
+The Minimum Spanning Tree shows three paths beginning with central defenders, emphasizing their importance in initiating plays and controlling the game from the back.
+
+**Connor Gallagher's Linkage Role**:
+
+Gallagher's involvement in four paths within the Minimum Spanning Tree, along with his prominent node size in the Influence Graph, signifies his essential role in linking defense and attack.
+
+Based on these findings from the graphs, we can begin to piece together Chelsea's general gameplan and strategy. Attempting to build-up play from the back through Thiago Silva, then centrally through Connor Gallagher, with the majority of play being down the right hand side of Chelsea's formation.
+
+### Comparing Chelsea's and Luton's Strongly Connected Components:
 
 
 
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/20feb696-95bd-4806-8bab-b30816f9455f)
 
-Through these graphs, we can instantly tell which team was more dominant. It becomes apparent that Chelsea were the team with more possession of the ball and with better ball movement, with every player on the team being involved.
+**Chelsea's SCC Analysis**:
 
-Luton’s largest strongly connected component (SCC) graph consisted of only 4 players out of 11, at great distance from one another.
-When an SCC graph display few components at significant distances it reveals a lot:
+The graph shows all Chelsea players connected, indicating excellent team coordination and ball movement. The high connectivity suggests high possession and effective use of the ball across the team, contributing to a dominant period for Chelsea.
 
-•	**Isolated Play and Lack of Cohesion**: Inefficient player link-up
+**Luton's SCC Analysis**:
 
-•	**Reliance on Individual Efforts**: Great distance between players suggests individual effort & skill is relied upon more frequently.
+Luton's graph displays only four players, significantly spaced apart. This sparse connectivity highlights several tactical challenges:
 
-•	**Challenges in Building Attacks**: Difficult to collaborate. 
+**Isolated Play and Lack of Cohesion**: There’s a noticeable gap in teamwork, with players primarily operating in isolation.
 
-•	**Weakness in Maintaining Possession**
+**Reliance on Individual Efforts**: The considerable distances between the connected players imply a dependence on individual skills rather than collective team play.
+
+**Challenges in Building Attacks**: The graph indicates difficulty in forming cohesive attacking moves, with the majority of the passes being long distance.
+
+**Weakness in Maintaining Possession**: The limited connections suggest that Luton struggled to keep the ball and build pressure.
 
 
 

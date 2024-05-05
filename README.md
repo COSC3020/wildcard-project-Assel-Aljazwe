@@ -7,13 +7,13 @@ your code.
 
 # Task:
 - ### **Objective**: 
-  - Improve a project focused on analyzing soccer passes and interceptions by using algorithms to better understand the game's flow and tactics.
+  - Improving a previous project of mine, initially focused on analyzing soccer passes and interceptions by using algorithms to better understand the game's flow and tactics.
 
 - ### **Approach**: 
   - Use Python’s graphing and algorithm libraries to create visual representations. Players are treated as points (vertices), and their passes to each other as lines (edges), to map out interactions and strategies during a match.
 
 - ### **Purpose**: 
-  - The goal is to apply these algorithms to show more detailed insights into team strategies and player roles, enhancing the overall understanding of soccer matches through visual and algorithmic analysis.
+  - The goal is to apply algortihms such as Kruskal's MST, or Tarjan's SCC to show more detailed insights into team strategies and player roles, thus improving the overall understanding of soccer matches through visual and algorithmic analysis.
 
 # Instructions to Directly Run Code (Dependencies)
 ### **Dependencies** - Anaconda Navigator: https://www.anaconda.com/download
@@ -34,13 +34,14 @@ I used Python because it has built in libraries with some algorithms already ava
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/f538df15-6aa3-45f0-9727-032ddf57a4d2)
 
 
-# Output
+# Example Output
 
 
 ## Randomly Chosen Graphs from Time Interval 10-20:
 
 
-![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/25959447-0874-40e0-98d5-a236b12e0d28)
+![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/a39edfd6-d6e3-40f8-a8d4-067f3e647253)
+
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/0e1a1949-5273-4efa-bba4-58be797b4ba5)
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/e3145420-5ee3-46d1-b447-245e147972ba)
 ![image](https://github.com/COSC3020/wildcard-project-Assel-Aljazwe/assets/157559559/e4210f7e-7067-4a41-a9fd-542507c55db9)
@@ -51,8 +52,8 @@ I used Python because it has built in libraries with some algorithms already ava
 
 
 # Analysis/Reasoning
-## Graph Types & Their Interpretation:
-### •	Strongly Connected Components (SCC): (Tiki-Taka)
+## Explaining Graph Types & Their Interpretation:
+### •	Tarjan's Strongly Connected Components (SCC):
 
   - **Focus**: An SCC in a football network is a subset of players where every player is reachable from every other player through a sequence of passes. In simpler terms, it's a group where you can find a path       of passes from any player to any other player within the same group.
   
@@ -76,7 +77,7 @@ I used Python because it has built in libraries with some algorithms already ava
   
   - **Relevance**: It highlights players crucial in linking various parts of the team, often pivotal in transitioning play from defense to attack or in maintaining possession effectively.
 
-### •	Minimum Spanning Tree (MST):
+### •	Krusksal's Minimum Spanning Tree (MST):
 
   - **Focus** : MST is a network that connects all the nodes (players) with the minimum total edge weight (least number of passes), without creating any loops.
   
@@ -97,11 +98,11 @@ I used Python because it has built in libraries with some algorithms already ava
 
 **Eigenvector Centrality Graph**:
 
-This graph highlights the key role of central defender Thiago Silva in Chelsea's ball distribution and possession maintenance. Moreover, it shows that Chelsea's defenders were crucial in transitioning the ball from defense to attack and in retaining possession, with Silva playing a pivotal role (highest eigenvector centrality in the time interval). The three highest eigenvector centralities were achieved by the central defenders.
+- This graph highlights the key role of central defender Thiago Silva in Chelsea's ball distribution and possession maintenance. Moreover, it shows that Chelsea's defenders were crucial in transitioning the ball from defense to attack and in retaining possession, with Silva playing a pivotal role (highest eigenvector centrality in the time interval). The three highest eigenvector centralities were achieved by the central defenders.
 
 **Community Modularity Graph**:
 
-This graph shows that Chelsea's right-hand side players interacted much more frequently than those on the left. Thus suggesting a tactical emphasis on attacking through the right side, likely targeting vulnerabilities in Luton's left-side defense.
+- This graph shows that Chelsea's right-hand side players interacted much more frequently than those on the left. Thus suggesting a tactical emphasis on attacking through the right side, likely targeting vulnerabilities in Luton's left-side defense.
 
 To better understand the specific contributions of Thiago Silva and his defensive colleagues during the time frame, we can examine Chelsea's Minimum Spanning Tree and Influence Graphs for more tactical insights.
 
@@ -109,21 +110,21 @@ To better understand the specific contributions of Thiago Silva and his defensiv
 
 **Prominent Roles of Gallagher and Silva**:
 
-Gallagher and Silva are consistently central in both the Minimum Spanning Tree and Player Influence Graph, indicating their crucial roles in Chelsea's game strategy.
+- Gallagher and Silva are consistently central in both the Minimum Spanning Tree and Player Influence Graph, indicating their crucial roles in Chelsea's game strategy.
 
 **Thiago Silva's Influence**:
 
-The Influence Graph highlights Thiago Silva due to his high number of passes, backed up by match data that notes him as a key distributor of the ball (highest number of passes in the interval).
+- The Influence Graph highlights Thiago Silva due to his high number of passes, backed up by match data that notes him as a key distributor of the ball (highest number of passes in the interval).
 
 **Defense as a Starting Point**:
 
-The Minimum Spanning Tree shows three paths beginning with central defenders, emphasizing their importance in initiating plays and controlling the game from the back.
+- The Minimum Spanning Tree shows three paths beginning with central defenders, emphasizing their importance in initiating plays and controlling the game from the back.
 
 **Connor Gallagher's Linkage Role**:
 
-Gallagher's involvement in four paths within the Minimum Spanning Tree, along with his prominent node size in the Influence Graph, signifies his essential role in linking defense and attack.
+- Gallagher's involvement in four paths within the Minimum Spanning Tree, along with his prominent node size in the Influence Graph, signifies his essential role in linking defense and attack.
 
-Based on these findings from the graphs, we can begin to piece together Chelsea's general gameplan and strategy. Attempting to build-up play from the back through Thiago Silva, then centrally through Connor Gallagher, with the majority of play being down the right hand side of Chelsea's formation.
+Based on these findings from the graphs, we can begin to piece together Chelsea's general gameplan and strategy. Attempting to build-up play from the back through Thiago Silva, then centrally through Connor Gallagher, with the majority of play ending up on the right side of Chelsea's formation.
 
 ### Comparing Chelsea's and Luton's Strongly Connected Components:
 
@@ -133,21 +134,37 @@ Based on these findings from the graphs, we can begin to piece together Chelsea'
 
 **Chelsea's SCC Analysis**:
 
-The graph shows all Chelsea players connected, indicating excellent team coordination and ball movement. The high connectivity suggests high possession and effective use of the ball across the team, contributing to a dominant period for Chelsea.
+- The graph shows all Chelsea players connected, indicating excellent team coordination and ball movement. The high connectivity suggests high possession and effective use of the ball across the team, contributing to a dominant period for Chelsea.
 
 **Luton's SCC Analysis**:
 
 Luton's graph displays only four players, significantly spaced apart. This sparse connectivity highlights several tactical challenges:
 
-**Isolated Play and Lack of Cohesion**: There’s a noticeable gap in teamwork, with players primarily operating in isolation.
+- **Reliance on Individual Efforts**: The considerable distances between the connected players suggests a dependence on individual skills rather than collective team play.
 
-**Reliance on Individual Efforts**: The considerable distances between the connected players imply a dependence on individual skills rather than collective team play.
+- **Challenges in Building Attacks**: The graph indicates difficulty in forming cohesive attacking moves, with the majority of the passes being long distance.
 
-**Challenges in Building Attacks**: The graph indicates difficulty in forming cohesive attacking moves, with the majority of the passes being long distance.
+- **Weakness in Maintaining Possession**: The limited connections suggest that Luton struggled to keep the ball and build offensive pressure.
 
-**Weakness in Maintaining Possession**: The limited connections suggest that Luton struggled to keep the ball and build pressure.
+Luton's SCC graph shows us the areas where Luton's gameplay was lacking, thus impacting their overall performance in the interval.
 
 
+### Summary:
+
+Based on the specific graphs we chose, here's a tactical summary for the 10-20 Minute Interval of the match:
+
+- **Key Players**: Thiago Silva and Connor Gallagher were crucial in ball distribution and linking defense to attack.
+
+- **Tactical Focus**: The majority of play was directed through Chelsea's right side, exploiting weaknesses in Luton's left defense.
+
+- **Team Dynamics**: Chelsea showed strong coordination with all players connected, indicating effective ball control. In contrast, Luton struggled with limited player connections and cohesion.
+
+- **Overall Strategy**: Chelsea put together attacks from the back to the right flank, maintaining dominance and control during this interval.
+
+
+## Conclusion
+
+The analysis I provided using these graphs is just an example of the insights we can gather by applying algorithms to match-gathered data. These graphs help us understand key player roles, team strategies, overall game dynamics and many more insights. Therefore, we can demonstrate the application of data analysis with algorithms to help reveal important patterns and tactics in sports, giving us a valuable, deeper understanding of how any game is played.
 
 
 

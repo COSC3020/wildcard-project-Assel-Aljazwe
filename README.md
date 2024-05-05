@@ -7,10 +7,10 @@ your code.
 
 # Task:
 - ### **Objective**: 
-  - Improving a previous project of mine, initially focused on analyzing soccer passes and interceptions by using algorithms to better understand the game's flow and tactics.
+  - Improving a previous project of mine, (initially focused on analyzing soccer passes and interceptions) by using algorithms to better understand the game's flow and tactics.
 
 - ### **Approach**: 
-  - Use Python’s graphing and algorithm libraries to create visual representations. Players are treated as points (vertices), and their passes to each other as lines (edges), to map out interactions and strategies during a match.
+  - Use Python’s graphing and algorithm libraries to create visual representations for in-depth analysis. Players are treated as points (vertices), and their passes to each other as lines (edges), to map out interactions and strategies during a match.
 
 - ### **Purpose**: 
   - The goal is to apply algortihms such as Kruskal's MST, or Tarjan's SCC to show more detailed insights into team strategies and player roles, thus improving the overall understanding of soccer matches through visual and algorithmic analysis.
@@ -169,6 +169,10 @@ The analysis I provided using these graphs is just an example of the insights we
 
 
 # References:
+### Specific Match:
+
+https://www.chelseafc.com/en/video/full-match-chelsea-3-0-luton-town
+
 ### Algorithms taken from:
 
 https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/

@@ -170,6 +170,11 @@ The analysis I provided using these graphs is just an example of the insights we
 
 # References:
 ### Specific Match:
+[Live commentary and user comments on the Premier League match: Chelsea vs. Luton]. https://www.whoscored.com/Matches/1729260/Live/England-Premier-League-2023-2024-Chelsea-Luton
+
+Luton Town vs. Chelsea - Live Score https://www.sofascore.com/en-us/luton-town-chelsea/Nsxb#11352484
+
+BBC Sport Chelsea 3-0 Luton Town: Raheem Sterling stars in comfortable win https://www.bbc.com/sport/football/66540847
 
 https://www.chelseafc.com/en/video/full-match-chelsea-3-0-luton-town
 
@@ -185,6 +190,28 @@ https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-al
 
 https://www.geeksforgeeks.org/page-rank-algorithm-implementation/
 
+ORIE 6334 Bridging Continuous and Discrete Optimization: Lecture 1. Cornell University https://people.orie.cornell.edu/dpw/orie6334/lecture1.pdf
+
+Eigenvectors and Eigenvalues explained visually. Explained Visually https://setosa.io/ev/eigenvectors-and-eigenvalues/
+
+Minimum Spanning Tree Tutorials & Notes. HackerEarth. https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/tutorial/
+
+Minimum Spanning Trees. Princeton University https://algs4.cs.princeton.edu/43mst/
+
+Directed graphs with given out-degree sequence have a giant component https://www.math.cmu.edu/~af1p/Texfiles/dirgiant.pdf
+
+Strongly connected components https://www.geeksforgeeks.org/strongly-connected-components/
+
+Modularityhttps://www.cs.cmu.edu/~ckingsf/bioinfo-lectures/modularity.pdf
+
+Community detection algorithms. Towards Data Science.  https://towardsdatascience.com/community-detection-algorithms-9bd8951e7dae
+
+PageRank Algorithm for Graph Databases.  https://memgraph.com/blog/pagerank-algorithm-for-graph-databases
+
 ### Debugging Assistance:
 
 https://chat.openai.com/
+
+### Extra
+
+Inter-operator reliability of live football match statistics from OPTA Sportsdata. International Journal of Performance Analysis in Sport, 13, 803-821 https://oa.upm.es/35753/1/INVE_MEM_2013_189111.pdf
